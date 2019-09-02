@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    {% if title %}
+    <title>{{ title }} - A Bookstore for self-published fictions</title>
+    {% else %}
+    <title>Generic Bookstore</title>
+    {% endif %}
   </head>
   <body>
-    <h1>Welcome</h1>
+    {% for book in books %}
+    <div class="book">
+      <img src="{{ book.img }}" />
+      <h1>{{ book.title }}</h1>
+      <h2>By {{ book.author }}</h2>
+      <p>on {{ book.pub_date }}</p>
+      <p>Genre: {{ book.genre }}</p>
+    </div>
+    {% endfor %}
   </body>
 </html>
