@@ -2,6 +2,10 @@
 
 A practice repo for Flask microframework
 
+### Tutorials followed
+
+- LinkedIn Learning: [Full Stack Web Development with Flask](https://www.linkedin.com/learning/full-stack-web-development-with-flask/)
+
 ### Run the app
 
 To run a Flask application, make sure you have `flask` installed. If not, execute `pip install Flask` to install it.
