@@ -17,3 +17,14 @@ The `.flaskenv` contains the configurations `FLASK_ENV` for setting environments
 To turn on debug mode while running the server, make sure you run `export FLASK_DEBUG=1` (in Mac & Linux) or `set FLASK_DEBUG=1` (in Windows) before you start the server. `export FLASK_DEBUG=0` or `set FLASK_DEBUG=0` will turn off your debug mode when running through `flask run`.
 
 Alternatively, you can put `app.run(debug=True)` under the `if __name__ == '__main__':` block in `app.py` and run the server through `python app.py`. That way, your debug mode will depend on the value you set in the `debug` flag. To turn off debug mode when starting your server this way, you will need to set the `debug` to `False`.
+
+### File structure
+
+```
+----
+ |-- main.py
+ |-- application/
+      |-- static/   [images, CSS, Javascript]
+      |-- templates [For HTML templates]
+
+```
