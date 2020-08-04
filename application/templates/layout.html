@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="static/css/main.css" />
+  </head>
+  <body>
+    {% include "includes/nav.html" %}
+    <!-- Define where to insert another template's block content -->
+    {% block content %} {% endblock %}
+    <!-- Reuse block -->
+    {{ self.content() }}
+
+    <!-- End of template insert -->
+    {% include "includes/footer.html" %}
+  </body>
+</html>
