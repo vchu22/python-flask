@@ -1,0 +1,9 @@
+<!-- Specify which template to insert the content of this template -->
+{% extends "layout.html" %} {% block content %}
+<h3>You are enrolled in:</h3>
+
+<p>Course ID: {{ data.id }}</p>
+<p>Course Title: {{ data.title }}</p>
+<p>Course Term: {{ data.term }}</p>
+
+{% endblock %}
